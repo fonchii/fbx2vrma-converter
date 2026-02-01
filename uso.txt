@@ -1,0 +1,21 @@
+node fbx2vrma-converter.js -i "tu_archivo.fbx" -o "salida.vrma" --fbx2gltf "./FBX2glTF-windows-x64.exe"
+
+node fbx2vrma-converter.js -i "C:\Users\Fonchi\Documents\Proyectos Fonchi\WaifuMaster\animations_fbx_and_olders\fbx_mixamo\Dancing Twerk.fbx" -o "C:\Users\Fonchi\Documents\Proyectos Fonchi\fbx2vrma\fbx2vrma-converter-main\vrma_output\dance_twerk.vrma" --fbx2gltf "./FBX2glTF-windows-x64.exe"
+
+node fbx2vrma-converter.js -i "./fbx_input/Dancing Twerk.fbx" -o "./vrma_output/dance_twerk.vrma" --fbx2gltf "./FBX2glTF-windows-x64.exe"
+
+node fbx2vrma-converter.js -i "./fbx_input/Get distracted.fbx" -o "./vrma_output/get_distracted.vrma" --fbx2gltf "./FBX2glTF-windows-x64.exe"
+node fbx2vrma-converter.js -i "./fbx_input/Look Around.fbx" -o "./vrma_output/look_around.vrma" --fbx2gltf "./FBX2glTF-windows-x64.exe"
+node fbx2vrma-converter.js -i "./fbx_input/Looking.fbx" -o "./vrma_output/looking.vrma" --fbx2gltf "./FBX2glTF-windows-x64.exe"
+node fbx2vrma-converter.js -i "./fbx_input/Touching Screen.fbx" -o "./vrma_output/touch_screen.vrma" --fbx2gltf "./FBX2glTF-windows-x64.exe"
+
+
+
+node fbx2vrma-converter.js -i "./fbx_input/thankful.fbx" -o "./vrma_output/thankful.vrma" --fbx2gltf "./FBX2glTF-windows-x64.exe"
+node fbx2vrma-converter.js -i "./fbx_input/Thankful.fbx" -o "./vrma_output/thankful.vrma" --fbx2gltf "./FBX2glTF-windows-x64.exe"
+node fbx2vrma-converter.js -i "./fbx_input/Thankful.fbx" -o "./vrma_output/thankful.vrma" --fbx2gltf "./FBX2glTF-windows-x64.exe"
+node fbx2vrma-converter.js -i "./fbx_input/Thankful.fbx" -o "./vrma_output/thankful.vrma" --fbx2gltf "./FBX2glTF-windows-x64.exe"
+node fbx2vrma-converter.js -i "./fbx_input/Thankful.fbx" -o "./vrma_output/thankful.vrma" --fbx2gltf "./FBX2glTF-windows-x64.exe"
+
+
+for %f in (fbx_input\*.fbx) do node fbx2vrma-converter.js -i "%f" -o "vrma_output\%~nf.vrma" --fbx2gltf "./FBX2glTF-windows-x64.exe"
